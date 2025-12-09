@@ -5,7 +5,6 @@ class SensorDataSerializer(serializers.ModelSerializer):
     class Meta:
         model = SensorData
         fields = [
-            "id",
             "timestamp",
             "sensor_id",
             "soil_moisture",
