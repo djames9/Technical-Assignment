@@ -107,3 +107,13 @@ Enter the database connection details
 Once added, you can explore and visualize the data instantly.
 
 I implemented a check to ensure that the application waits for the database to fully start before executing any commands.
+
+These are the commands to access the database and verify that the table is a hypertable:
+
+docker exec -it postgres_db psql -U myuser -d mydb
+
+\d
+
+SELECT * FROM analytics_sensordata LIMIT 10;
+
+\d+ analytics_sensordata
