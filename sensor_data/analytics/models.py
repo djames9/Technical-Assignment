@@ -2,6 +2,7 @@ from django.db import models
 from django.utils import timezone
 
 
+
 class SensorData(models.Model):
     timestamp = models.DateTimeField(
         primary_key=True,
